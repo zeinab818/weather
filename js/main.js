@@ -30,7 +30,7 @@ async function search() {
         var weatherData = await weatherResponse.json();
 
         displayWeather(weatherData);
-        clearForm();
+
 
 
     } catch (err) {
