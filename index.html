@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <title>login</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+        <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+            <div class="container ms-auto d-flex justify-content-between align-items-center ">
+                <a class="navbar-brand d-flex flex-row justify-content-center align-items-center" href="#">
+                    <img src="images/logo.png" alt="logo" class="logo-img">
+                    <div class="logo-type px-2">
+                        <h1>Weather</h1>
+                        <span class="desc-logo">tagline goes here</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">news</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">live cameras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex flex-row align-items-center" href="#">
+                <img src="images/logo.png" alt="logo" class="logo-img">
+                <div class="logo-type px-2">
+                    <h1>Weather</h1>
+                    <span class="desc-logo">tagline goes here</span>
+                </div>
+            </a>
+
+            <!-- Toggler button -->
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+    
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero-1">
+            <div class="hero">
+            <div class="container mx-auto px-3 pt-4 ">
+                <div class="formm position-relative">
+                    <input id="search" oninput="search()" class="input-location w-100 rounded-5" type="text" name="location" id="location" placeholder="Find your location">
+                    <input class="find-location rounded-5 position-absolute" type="submit" name="find" id="find" value="Find">
+                
+                </div>
+                <div class="row py-5" id="row">
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </main>
+
+
+    <footer>
+    <div class="container px-3 pt-4">
+        <div class="row align-items-center">
+            <!-- الاشتراك -->
+            <div class="col-md-8">
+                <div class="formm position-relative">
+                    <input class="input-mail w-100 rounded-5" type="email" name="email" id="email" placeholder="Enter your email to subscribe...">
+                    <input class="sub rounded-5 position-absolute" type="submit" name="sub" id="sub" value="Subscribe">
+                </div>
+            </div>
+
+            <!-- أيقونات السوشيال -->
+            <div class="col-md-3 offset-md-1">
+                <div class="social-links d-flex gap-2 justify-content-md-end justify-content-center mt-4 mt-md-0">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- الحقوق -->
+        <div class="row mt-4">
+            <div class="col text-center">
+                <p class="copyright">
+                    &copy; 2014 Company name. Designed by Themezy. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

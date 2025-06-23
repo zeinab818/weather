@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, "Open Sans", sans-serif;
+}
+
+:root{
+    --main-color:rgb(29,31,42);
+    --sec-color:rgb(49,52,67);
+    --trd-color:rgb(45,48,61);
+    --forth-color:rgb(0,153,214);
+}
+body{
+    background-color: var(--main-color);
+}
+
+
+.navbar{
+    background-color: var(--main-color) !important;
+    padding: 50px 0;
+}
+nav .container .nav-link:hover,
+nav .container .nav-link.active {
+    color: var(--forth-color) !important;
+    border: 2px solid var(--forth-color);
+    border-radius: 30px;
+}
+nav .container .navbar-toggler .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+nav .container .nav-link {
+    color: white;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 5px 25px;
+    border: 2px solid transparent; /* ✅ إضافة دي مهمة جداً */
+}
+
+nav .container .nav-item{
+    margin: 5px 25px;
+
+}
+
+nav .container .navbar-brand{
+    font-size: 16px;
+}
+nav .container .navbar-brand h1{
+    
+    font-size: 16px;
+    margin-bottom: 0;
+    color: white;
+  
+
+
+}
+nav .container .navbar-brand span{
+    
+    font-size: 10px;
+
+    margin-top: 0;
+    color: rgb(227, 225, 225);
+
+}
+/* main .hero{
+    background-image:  linear-gradient(rgb(0,0,0,0.2)) , url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+} */
+
+main .hero {
+    background: linear-gradient(to bottom, 
+        rgba(0, 0, 0, 0.3) 0%, 
+        rgba(0, 0, 0, 0.5) 50%, 
+        var(--main-color) 80%, 
+        var(--main-color) 100%),
+        url(../images/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+
+main .hero .container .formm .input-location{
+    padding:15px 20px 20px 15px;
+    color: white;
+    background-color: var(--main-color);
+}
+main .hero .container .formm .find-location{
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    padding: 8px 50px;
+    color: white;
+    background-color: var(--forth-color)
+    ;
+}
+main .hero .container .row .f-con{
+
+    background-color: rgb(49,52,67);
+    text-transform: capitalize;
+    color: white;
+}
+main .hero .container .row .f-con .header{
+    background-color: rgb(45,48,61);
+    padding: 10px;
+}
+main .hero .container .row .f-con .header h4{
+    font-size: 14px;
+    color: rgb(226, 224, 224);
+    font-weight: 400;
+}
+
+main .hero .container .row .f-con .contents .location-city h5{
+    font-size: 18px;
+    color: rgb(226, 224, 224);
+    font-weight: 400;
+    padding: 20px 5px;
+}
+main .hero .container .row .f-con .contents .degree h1{
+    font-size: 90px;
+    font-weight: 700;
+}
+main .hero .container .row .f-con .contents .custom{
+    font-size: 16px;
+    color: var(--forth-color);
+    padding: 20px 10px;
+}
+input::placeholder{
+    font-size: 14px;
+}
+main .hero .container .row .f-con .contents .footer-imag{
+    font-size: 14px;
+    padding: 20px 0;
+    color: rgb(226, 224, 224);
+
+}
+main .hero .container .row .f-con .contents .footer-imag span{
+    padding-left: 10px;
+    
+}
+
+main .hero .container .row .sec-con{
+
+    background-color: rgb(38,40,53);
+    text-transform: capitalize;
+    color: white;
+}
+
+main .hero .container .row .sec-con .header{
+    background-color: rgb(33,36,47);
+    padding: 10px;
+    
+}
+
+main .hero .container .row .sec-con .header h4{
+    font-size: 14px;
+    color: rgb(226, 224, 224);
+    font-weight: 400;
+}
+main .hero .container .row .sec-con .contents .degree p{
+    font-size: 34px;
+    padding-bottom: 0;
+    margin-bottom:0 ;
+}
+main .hero .container .row .sec-con .contents .degree span{
+    font-size: 14px;
+    padding-top: 0;
+    margin-top: 0;
+    font-weight: 400;
+    color: rgb(226, 224, 224);
+
+
+}
+main .hero .container .row .sec-con .contents .degree h4{
+    font-size: 16px;
+    color: var(--forth-color);
+    padding: 20px 10px;
+}
+
+
+main .hero .container .row .trd-con{
+
+   background-color: rgb(49,52,67);
+    text-transform: capitalize;
+    color: white;
+}
+
+main .hero .container .row .trd-con .header{
+    background-color: rgb(45,48,61);
+
+    padding: 10px;
+    
+}
+
+main .hero .container .row .trd-con .header h4{
+    font-size: 14px;
+    color: rgb(226, 224, 224);
+    font-weight: 400;
+}
+main .hero .container .row .trd-con .contents .degree p{
+    font-size: 34px;
+    padding-bottom: 0;
+    margin-bottom:0 ;
+}
+main .hero .container .row .trd-con .contents .degree span{
+    font-size: 14px;
+    padding-top: 0;
+    margin-top: 0;
+    font-weight: 400;
+    color: rgb(226, 224, 224);
+
+
+}
+main .hero .container .row .trd-con .contents .degree h4{
+    font-size: 16px;
+    color: var(--forth-color);
+    padding: 20px 10px;
+}
+.f-con, .sec-con, .trd-con {
+    padding-left: 0;
+    padding-right: 0;
+}
+.contents {
+    padding: 0 15px;
+}
+footer {
+    background-color: var(--sec-color);
+    padding: 100px 0 20px;
+}
+
+footer .formm .input-mail {
+    padding: 15px 20px;
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+}
+
+footer .formm .sub {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 50px;
+    color: white;
+    background-color: var(--forth-color);
+    border: none;
+}
+
+footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #009ad8;
+    border-radius: 50%;
+    background: #1e202b;
+    font-size: 20px;
+}
+
+
+footer .social-links a:hover {
+    color: #1e202b;
+    background-color: #009ad8;
+}
+
+footer .copyright {
+    font-size: 14px;
+    color: rgb(122, 120, 120);
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+.hero-1{
+    background-color: var(--main-color);
+}
+
+
