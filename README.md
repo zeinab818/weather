@@ -28,5 +28,5 @@ It supports searching for cities and also detects the **current location** of th
 ## 🙋‍♀️ Author
 
 - **Zeinab Ali**  
-  [LinkedIn Profile](https://www.linkedin.com/in/zeinab-ali)  
+  [LinkedIn Profile](https://www.linkedin.com/in/zeinab-ali-a2b89b204/)  
   Front-End Developer | Passionate about UI/UX and Weather Tech ☁️
