@@ -95,7 +95,7 @@
             <div class="container mx-auto px-3 pt-4 ">
                 <div class="formm position-relative">
                     <input id="search" oninput="search()" class="input-location w-100 rounded-5" type="text" name="location" id="location" placeholder="Find your location">
-                    <input class="find-location rounded-5 position-absolute" type="submit" name="find" id="find" value="Find">
+                    <input onclick="displayWeather(this)"  class="find-location rounded-5 position-absolute" type="submit" name="find" id="find" value="Find">
                 
                 </div>
                 <div class="row py-5" id="row">
@@ -118,7 +118,7 @@
                 </div>
             </div>
 
-            <!-- أيقونات السوشيال -->
+        
             <div class="col-md-3 offset-md-1">
                 <div class="social-links d-flex gap-2 justify-content-md-end justify-content-center mt-4 mt-md-0">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -129,7 +129,6 @@
             </div>
         </div>
 
-        <!-- الحقوق -->
         <div class="row mt-4">
             <div class="col text-center">
                 <p class="copyright">
